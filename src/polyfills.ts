@@ -51,3 +51,10 @@ import 'zone.js';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+import { toTemporalInstant } from '@js-temporal/polyfill';
+
+/* if (typeof Temporal === "undefined") {
+  (globalThis as any).Temporal = Temporal;
+} */
+
+(Date.prototype as any).toTemporalInstant = toTemporalInstant;
