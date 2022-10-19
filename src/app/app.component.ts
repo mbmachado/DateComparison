@@ -33,7 +33,6 @@ export class AppComponent implements OnInit {
     this.testTemporal();
   }
 
-
   testDateFns(): void {
     console.time("date-fns Time");
 
@@ -61,7 +60,6 @@ export class AppComponent implements OnInit {
       '|date-fns| isDateLeapYear:': isDateLeapYear,
     });
   }
-
 
   testDayJs(): void {
     console.time("dayJs Time");
